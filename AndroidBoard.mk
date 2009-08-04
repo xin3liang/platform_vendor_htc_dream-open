@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
 # default apns list
 #
 PRODUCT_COPY_FILES += \
-	vendor/htc/dream-open/apns.xml:system/etc/apns-conf.xml
+	$(LOCAL_PATH)/apns.xml:system/etc/apns-conf.xml
 
 # keyboard maps
 #
@@ -62,6 +62,18 @@ PRODUCT_COPY_FILES += \
 	$(proprietary)/libOmxCore.so:obj/lib/libOmxCore.so \
 	$(proprietary)/libOmxCore.so:system/lib/libOmxCore.so \
 	$(proprietary)/libhgl.so:system/lib/libhgl.so \
+	$(proprietary)/libhtc_acoustic.so:system/lib/libhtc_acoustic.so \
+	$(proprietary)/libjni_pinyinime.so:system/lib/libjni_pinyinime.so \
+	$(proprietary)/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
+	$(proprietary)/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
+	$(proprietary)/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
+	$(proprietary)/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
+	$(proprietary)/libopencorehw.so:system/lib/libopencorehw.so \
+	$(proprietary)/libpvasf.so:system/lib/libpvasf.so \
+	$(proprietary)/libpvasfreg.so:system/lib/libpvasfreg.so \
+	$(proprietary)/libspeech.so:system/lib/libspeech.so \
+	$(proprietary)/lights.goldfish.so:system/lib/hw/lights.goldfish.so \
+	$(proprietary)/sensors.trout.so:system/lib/hw/sensors.trout.so \
 	$(proprietary)/brf6300.bin:system/etc/firmware/brf6300.bin \
 	$(proprietary)/akmd:system/bin/akmd \
 	$(proprietary)/AudioFilter.csv:system/etc/AudioFilter.csv
@@ -73,3 +85,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(proprietary)/tiwlan.ini:system/etc/wifi/tiwlan.ini \
 	$(proprietary)/Fw1251r1c.bin:system/etc/wifi/Fw1251r1c.bin
+
+PRODUCT_COPY_FILES += \
+	$(proprietary)/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
+	$(proprietary)/AudioPreProcess.csv:system/etc/AudioPreProcess.csv

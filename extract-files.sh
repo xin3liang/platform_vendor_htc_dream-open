@@ -13,6 +13,7 @@ adb pull /system/etc/wifi/Fw1251r1c.bin proprietary/Fw1251r1c.bin
 adb pull /system/etc/wifi/tiwlan.ini proprietary/tiwlan.ini
 
 adb pull /system/lib/libaudioeq.so proprietary/libaudioeq.so
+adb pull /system/lib/libcamera.so proprietary/libcamera.so
 adb pull /system/lib/libgps.so proprietary/libgps.so
 adb pull /system/lib/libhgl.so proprietary/libhgl.so
 adb pull /system/lib/libhtc_acoustic.so proprietary/libhtc_acoustic.so

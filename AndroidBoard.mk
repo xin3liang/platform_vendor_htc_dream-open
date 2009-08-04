@@ -67,6 +67,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	$(proprietary)/libaudioeq.so:system/lib/libaudioeq.so \
+	$(proprietary)/libcamera.so:system/lib/libcamera.so \
 	$(proprietary)/libgps.so:system/lib/libgps.so \
 	$(proprietary)/libhgl.so:system/lib/libhgl.so \
 	$(proprietary)/libhtc_acoustic.so:system/lib/libhtc_acoustic.so \
@@ -89,4 +90,5 @@ PRODUCT_COPY_FILES += \
 	$(proprietary)/sensors.trout.so:system/lib/hw/sensors.trout.so
 
 PRODUCT_COPY_FILES += \
+	$(proprietary)/libcamera.so:obj/lib/libcamera.so \
 	$(proprietary)/libgps.so:obj/lib/libgps.so

@@ -11,7 +11,11 @@ BOARD_WLAN_TI_STA_DK_ROOT := system/wlan/ti/sta_dk_4_0_4_32
 # Kernel/Bootloader machine name
 #
 TARGET_BOOTLOADER_BOARD_NAME := trout
-HAVE_CUSTOM_WIFI_DRIVER_2 := true
+
+WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
+WIFI_DRIVER_MODULE_ARG := ""
+WIFI_DRIVER_MODULE_NAME := "wlan"
+WIFI_FIRMWARE_LOADER := "wlan_loader"
 
 # BOARD_USES_GENERIC_AUDIO := true
 
